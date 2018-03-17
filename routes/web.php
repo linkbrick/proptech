@@ -36,5 +36,9 @@ Route::group(['middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
     Route::resource('maintenance/projects', 'Maintenance\ProjectController');
 
+
+    Route::get('maintenance/{project}/project-download/{type}','Maintenance\ProjectController@download')->name('project-download');
+
+
 });
 

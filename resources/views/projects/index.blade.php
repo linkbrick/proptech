@@ -46,9 +46,9 @@
                                                       onsubmit="return confirm('Are you sure to delete this project?')">
                                                     <input type="hidden" name="_method" value="DELETE">
                                                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
-                                                    <button type="submit" class="col-md-3 btn btn-danger">
-                                                        <i class="material-icons">close</i>
-                                                    </button>
+                                                    {{--<button type="submit" class="col-md-3 btn btn-danger">--}}
+                                                        {{--<i class="material-icons">close</i>--}}
+                                                    {{--</button>--}}
                                                 </form>
                                             </div>
                                         </td>

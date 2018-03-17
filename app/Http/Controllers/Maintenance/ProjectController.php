@@ -103,4 +103,9 @@ class ProjectController extends Controller
         return view('projects.show', compact('project','caption'));
     }
 
+    public function download(Project $project,$type)
+    {
+        return response()->download($project->getMedia($type)->first()->getPath(), $project->getMedia($type)->first()->file_name);
+    }
+
 }
