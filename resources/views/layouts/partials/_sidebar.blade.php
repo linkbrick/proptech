@@ -36,14 +36,14 @@ Tip 3: you can change the color of the sidebar with data-background-color="white
             </div>
         </div>
         <ul class="nav">
-            <li class="active">
-                <a href="#">
+            <li>
+                <a href="{{ route('home') }}">
                     <i class="material-icons">pie_chart</i>
                     <p> Dashboard </p>
                 </a>
             </li>
             <li>
-                <a href="#">
+                <a href="{{ route('home') }}">
                     <i class="material-icons">people</i>
                     <p> Customers </p>
                 </a>

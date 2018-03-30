@@ -128,20 +128,20 @@
                     <div class="col-md-6">
                         <div class="card card-plain card-blog text-center">
                             <div class="card-image">
-                                <a href="{{ route('millerz') }}">
+                                <a href="{{ url('/project/millerz') }}">
                                     <img class="img img-raised" src="{{ asset('images/landing/property1.jpg') }}" data-type="image" />
                                 </a>
                             </div>
                             <div class="card-body">
                                 <h6 class="card-category text-warning">Millerz Square</h6>
                                 <h3 class="card-title">
-                                    <a href="{{ route('millerz') }}">The New Landmark of Mixed-Development</a>
+                                    <a href="{{ url('/project/millerz') }}">The New Landmark of Mixed-Development</a>
                                 </h3>
                                 <p class="card-description">
                                     The latest mixed-development of Old Klang Road consisting of service apartments, offices, an F&B portion and even a college, this is a place to bask in life's wonderful glow.
                                 </p>
                                 <br/>
-                                <a href="{{ route('millerz') }}" class="btn btn-warning btn-round">Read More</a>
+                                <a href="{{ url('/project/millerz') }}" class="btn btn-warning btn-round">Read More</a>
                             </div>
                         </div>
                     </div>

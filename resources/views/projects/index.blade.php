@@ -35,10 +35,10 @@
                                         @endforeach
                                         <td class="td-actions">
                                             <div class="row" style="width: 110px;margin:0px;">
-                                                <a href="{{route('projects.edit',["id" => $project->id])}}"
+                                                <a href="{{route('projects.edit',['project' => $project->slug])}}"
                                                    class="col-md-3 btn btn-info"><i
                                                             class="material-icons">edit</i></a>
-                                                <a href="{{route('projects.show',["id" => $project->id])}}"
+                                                <a href="{{route('projects.show',['project' => $project->slug])}}"
                                                    class="col-md-3 btn btn-warning"><i
                                                             class="material-icons">view_headline</i></a>
                                                 <form action="{{route('projects.destroy',["id" => $project->id])}}"
