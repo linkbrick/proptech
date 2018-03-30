@@ -32,6 +32,7 @@ class ProjectController extends Controller
             'maintenance_fee','booking_fee','number_of_floor','number_of_unit', 'number_of_block',
             'land_area','name']));
 
+        if($request->filled('name')) $project->slug = str_slug($request->input('name'),'-');
 
         if ($request->file('banner_image') !== null) {
             $project->addMedia($request->file('banner_image'))->toMediaCollection('banner');
@@ -65,6 +66,8 @@ class ProjectController extends Controller
             'maintenance_fee','booking_fee','number_of_floor','number_of_unit', 'number_of_block',
             'land_area','name']))->save();
 
+        if($request->filled('name')) $project->slug = str_slug($request->input('name'),'-');
+
         if($request->input('remove_banner_image') == "true"){
             $project->clearMediaCollection('banner');
         }
@@ -91,6 +94,8 @@ class ProjectController extends Controller
             $project->clearMediaCollection('facility');
             $project->addMedia($request->file('faciity_image'))->toMediaCollection('facility');
         }
+
+        $project->save();
 
 
         return redirect()->route('projects.index')->withSuccess($request->input('name') . ' has been updated.');

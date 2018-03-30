@@ -18,7 +18,7 @@
                     <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-toggle="dropdown">Projects</a>
                     <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
                         <a class="dropdown-item" href="../sections.html#headers"> Scarletz</a>
-                        <a class="dropdown-item" href="{{ route('millerz') }}"> Millerz</a>
+                        <a class="dropdown-item" href="{{ url('/project/millerz') }}"> Millerz</a>
                         <a class="dropdown-item" href="../sections.html#blogs">Parc 3</a>
                         <a class="dropdown-item" href="../sections.html#teams">Southlink</a>
                         <a class="dropdown-item" href="../sections.html#projects">Atwater</a>

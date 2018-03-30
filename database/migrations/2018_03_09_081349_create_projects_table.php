@@ -16,6 +16,7 @@ class CreateProjectsTable extends Migration
         Schema::create('projects', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->nullable();
+            $table->string('slug')->nullable();
             $table->text('project_tag_line')->nullable();
             $table->string('launched_date')->nullable();
             $table->string('completion_date')->nullable();
@@ -44,6 +45,7 @@ class CreateProjectsTable extends Migration
             $table->string('number_of_unit')->nullable();
             $table->string('number_of_block')->nullable();
             $table->string('land_area')->nullable();
+            $table->text('excerpt')->nullable();
             $table->string('status')->default('ACTIVE');
             $table->timestamps();
         });
